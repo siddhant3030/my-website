@@ -10,8 +10,6 @@ const config = {
   tagline: 'Dinosaurs are cool',
   url: 'https://github.com',
   baseUrl: '/my-website/',
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
 
   // GitHub pages deployment config.
@@ -20,7 +18,7 @@ const config = {
   projectName: 'my-website', 
   deploymentBranch: 'gh-pages',
   plugins: [[
-    require.resolve('@cmfcmf/docusaurus-search-local'), {indexBlog: false},
+    require.resolve('@cmfcmf/docusaurus-search-local'), {indexDocs: true},
   ]],
   
 
